@@ -1,0 +1,760 @@
+@import "default";
+
+  .Image-first {
+    background-size: cover;
+    background-image: url(http://brivona.themetechmount.com/wp-content/uploads/2019/01/mainslider-bg001.jpg);
+    .FirstSpan {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      span {
+        font-size: 16px;
+        color: $white !important;
+        letter-spacing: 1px;
+        font-weight: 100;
+        padding-left: 16px;
+      }
+      h2 {
+        font-size: 75px;
+        font-weight: 600;
+        color: $white;
+        margin-bottom: 0;
+        line-height: 76px;
+        span {
+          font-weight: 600;
+          font-size: 75px;
+          color: $green !important;
+          padding-left: 0;
+          font-family: "Saira", sans-serif;
+        }
+      }
+      p {
+        color: rgb(237, 237, 237);
+        margin: 10px 0 55px 0;
+      }
+      .Button {
+        margin-bottom: 20px;
+        @extend %Button1;
+      }
+      .Alex {
+        position: relative;
+        text-align: right;
+        margin-top: 52px;
+        padding-right: 67px;
+        &::after {
+          content: "\f007";
+          font: 14px/1 FontAwesome;
+          position: absolute;
+          color: $white;
+          background-color: #00d6a3;
+          padding: 12px 16px;
+          font-size: 23px;
+          border-radius: 3px;
+          top: 0;
+          right: 3px;
+        }
+        h6 {
+          margin-bottom: 0;
+          color: $white;
+          font-size: 19px;
+        }
+        span {
+          font-size: 15px;
+          color: $white;
+          font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+        }
+        a {
+          color: $green;
+          font-size: 15px;
+          text-decoration: underline;
+          transition: all 0.2s linear;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+/*Header end*/
+
+/*Main start*/
+
+.Content-wrap {
+  .Content-wraps {
+    position: relative;
+    top: -60px;
+    background-color: white;
+    box-shadow: 0 0 15px 0 rgba(41, 61, 88, 0.1);
+    .wrap-box {
+      padding: 45px 38px 0 38px;
+      border-right: 1px solid #f2f2f2;
+      height: 290px;
+      position: relative;
+      &:hover i {
+        top: 34px;
+      }
+      i {
+        color: $green;
+        font-size: 45px;
+        position: absolute;
+        top: 41px;
+        left: 0;
+        right: 0;
+        transition: all 0.4s ease;
+      }
+      h2 {
+        color: $darkgreen;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 61px;
+        margin-bottom: 12px;
+      }
+      p {
+        color: $gray;
+        font-size: 15px;
+        font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+      }
+      a {
+        font-size: 13px;
+        color: $green;
+        font-weight: 600;
+        letter-spacing: 1px;
+        transition: 0.2s linear;
+        &:hover {
+          text-decoration: none;
+          color: $darkgreen;
+        }
+      }
+    }
+  }
+}
+
+.Our-Medical {
+  padding-top: 92px;
+  .Our-Medical-left {
+    padding: 30px 0 0 0;
+    padding-top: 30px;
+    h4 {
+      font-size: 14px;
+      color: $gray;
+    }
+    h2 {
+      font-size: 35px;
+      color: $darkgreen;
+      font-weight: 600;
+    }
+    p {
+      font-size: 15px;
+      color: $gray;
+      font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+      margin: 18px 0 30px 0;
+    }
+    h3 {
+      font-size: 20px;
+      color: $darkgreen;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    ul {
+      margin-bottom: 44px;
+      @extend %Li;
+    }
+
+    @extend %Button2;
+
+    @extend %Button3;
+  }
+  .bg-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABkAAD/4QMraHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQ0M0ZGRjYyMDczQTExRTlCQTZCRjUzOTQ0MzdBQjM0IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQ0M0ZGRjYxMDczQTExRTlCQTZCRjUzOTQ0MzdBQjM0IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkM1MEZDRURGM0EzMTFFODlBMTE5N0UyNkZDQzlGOTEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkM1MEZDRUVGM0EzMTFFODlBMTE5N0UyNkZDQzlGOTEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAABAQEBAQEBAQEBAQEBAQEBAQEB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);
+    img {
+      width: 97%;
+      margin-left: 24px;
+      padding-bottom: 36px;
+      position: relative;
+    }
+    .Years-exp {
+      position: absolute;
+      left: 93px;
+      bottom: 114px;
+      background-color: $white;
+      padding: 12px 28px 18px 93px;
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 20%;
+        border: 20px solid transparent;
+        border-bottom: 0;
+        border-top-color: $white;
+        margin-left: -21px;
+        margin-bottom: -19px;
+      }
+      .years-exp {
+        position: relative;
+        &::before {
+          content: "\f0f8";
+          font: 14px/1 FontAwesome;
+          position: absolute;
+          top: 20px;
+          left: -69px;
+          font-size: 50px;
+          color: $green;
+        }
+        span {
+          font-size: 60px;
+          color: $darkgreen;
+          font-weight: 600;
+          line-height: 76px;
+        }
+        h3 {
+          font-size: 18px;
+          width: 134px;
+          color: $gray;
+        }
+      }
+    }
+  }
+}
+
+#About-medical {
+  padding-top: 98px;
+
+
+    .Right-Side {
+      background-color: $green;
+      
+      padding: 58px 150px 86px 52px;
+      h4 {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.9);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+      }
+      h2 {
+        font-size: 35px;
+        color: $white;
+        font-weight: 700;
+      }
+      .Contents {
+        padding: 29px 15px 21px 15px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        &:first-child {
+          border-top: none;
+          border-left: none;
+        }
+        &:nth-child(2) {
+          border-top: none;
+        }
+        &:nth-child(3) {
+          border-top: none;
+          border-right: none;
+        }
+        &:nth-child(4) {
+          border-bottom: none;
+          border-left: none;
+        }
+        &:nth-child(5) {
+          border-bottom: none;
+        }
+        &:nth-child(6) {
+          border-bottom: none;
+          border-right: none;
+        }
+        h5 {
+          font-size: 40px;
+          color: $white;
+          margin-bottom: 0;
+          font-weight: 900;
+        }
+        h3 {
+          font-size: 18px;
+          color: rgba(255, 255, 255, 0.9);
+        }
+        .contents1 {
+          padding-left: 66px;
+          position: relative;
+          &::before {
+            content: "\f091";
+            font: 14px/1 FontAwesome;
+            position: absolute;
+            color: $white;
+            font-size: 40px;
+            left: 7px;
+            top: 8px;
+          }
+        }
+        .contents2 {
+          padding-left: 66px;
+          position: relative;
+          &::before {
+            content: "\f007";
+            font: 14px/1 FontAwesome;
+            position: absolute;
+            color: $white;
+            font-size: 40px;
+            left: 7px;
+            top: 8px;
+          }
+        }
+        .contents3 {
+          padding-left: 66px;
+          position: relative;
+          &::before {
+            content: "\f21e";
+            font: 14px/1 FontAwesome;
+            position: absolute;
+            color: $white;
+            font-size: 40px;
+            left: 7px;
+            top: 8px;
+          }
+        }
+        .contents4 {
+          padding-left: 66px;
+          position: relative;
+          &::before {
+            content: "\f01c";
+            font: 14px/1 FontAwesome;
+            position: absolute;
+            color: $white;
+            font-size: 40px;
+            left: 7px;
+            top: 8px;
+          }
+        }
+        .contents5 {
+          padding-left: 66px;
+          position: relative;
+          &::before {
+            content: "\f164";
+            font: 14px/1 FontAwesome;
+            position: absolute;
+            color: $white;
+            font-size: 40px;
+            left: 7px;
+            top: 8px;
+          }
+        }
+        .contents6 {
+          padding-left: 66px;
+          position: relative;
+          &::before {
+            content: "\f12d";
+            font: 14px/1 FontAwesome;
+            position: absolute;
+            color: $white;
+            font-size: 40px;
+            left: 7px;
+            top: 8px;
+          }
+      }
+    }
+  }
+}
+
+#Offer-Service {
+  width: 100%;
+  background-color: $darkgreen;
+
+  .Offer-top {
+    padding-top: 130px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    h4 {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.75);
+    }
+    h2 {
+      color: $white;
+      font-size: 35px;
+      font-weight: 700;
+    }
+    p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.75);
+      font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+    }
+    .Offer-top-but {
+      text-align: right;
+      @extend %Button1;
+    }
+  }
+  .Offer-bottom {
+    padding-top: 30px;
+    .Border-Color {
+      padding: 29px 43px;
+      transition: all 0.3s linear;
+      border: 3px solid transparent;
+      margin-bottom: 10px;
+      i {
+        font-size: 40px;
+        color: $green;
+        transition: all 0.2s linear;
+      }
+      h2 {
+        font-size: 20px;
+        color: $white;
+        font-weight: 700;
+        margin: 20px 0 10px 0;
+      }
+      p {
+        font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 15px;
+      }
+      a {
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: $green;
+        transition: all 0.2s linear;
+        &:hover {
+          color: $white;
+          text-decoration: none;
+        }
+      }
+      &:hover {
+        border: 3px solid $green;
+      }
+      &:hover i {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+#Health-needs {
+  background-image: url(http://brivona.themetechmount.com/wp-content/uploads/2019/01/row-bgimg-four.jpg?id=2766);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 90px;
+  .Health-Text {
+    padding-top: 100px;
+    h3 {
+      color: $darkgreen;
+      font-size: 20px;
+    }
+    h2 {
+      color: $darkgreen;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 45px;
+      strong {
+        color: $green;
+      }
+    }
+    @extend %Button2;
+
+    @extend %Button3;
+
+    h4 {
+      font-size: 25px;
+      font-weight: 600;
+      color: $darkgreen;
+      padding-top: 50px;
+      strong {
+        color: $green;
+      }
+    }
+  }
+  .Health-Img {
+    img {
+      width: 87%;
+      height: auto;
+    }
+  }
+}
+
+#Clients {
+  position: relative;
+  .Left-side {
+    background-color: $green;
+    padding: 80px 160px;
+    position: relative;
+    h4 {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    h2 {
+      font-size: 35px;
+      color: $white;
+      font-weight: 700;
+    }
+    p {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    a {
+      position: relative;
+      color: $white;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      &::after {
+        content: "\f061";
+        font: 14px/1 FontAwesome;
+        position: absolute;
+        top: 4px;
+        right: -22px;
+      }
+    }
+  }
+  .Right-side {
+    padding: 80px 72px;
+    background-color: $darkgreen;
+    position: absolute;
+    right: 0;
+    top: 62px;
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: $green;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+    span {
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.75);
+      font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+    }
+    .Patient {
+      width: 553px;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px 28px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 26px;
+        left: -20px;
+        border-top: 17px solid transparent;
+        border-right: 20px solid rgba(255, 255, 255, 0.05);
+        border-bottom: 17px solid transparent;
+      }
+      p {
+        font-style: italic;
+        line-height: 30px;
+        color: rgba(255, 255, 255, 0.75);
+        font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+      }
+      i {
+        color: #fd4;
+        font-size: 13px;
+        margin-right: -4px;
+      }
+    }
+  }
+}
+
+.Client-Imgs {
+  padding-top: 50px;
+  .Client-logo {
+    position: relative;
+    .tooltip {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #Top-bar {
+    display: none;
+  }
+  #Header {
+    display: none;
+  }
+  .Div {
+    display: none !important;
+  }
+  .Bar-fixed {
+    display: none!important;
+  }
+  .Header-images {
+    h2 {
+      font-size: 66px !important;
+      span {
+        font-size: 66px !important;
+      }
+    }
+  }
+  .Toggle-menu {
+    display: block;
+  }
+  #Clients {
+    .Left-side {
+      padding: 80px 31px !important;
+    }
+  }
+  #Footer-second {
+    .ServiceUl {
+      li {
+        width: 100% !important;
+        display: block !important;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+.NAV{
+  display: block!important;
+}
+  .Content-wraps {
+    .wrap-box {
+      padding: 45px 14px 0 14px !important;
+    }
+  }
+  #Offer-Service {
+    .Offer-top {
+      padding-top: 68px !important;
+    }
+  }
+
+  #Health-needs {
+    .Health-Img {
+      text-align: center;
+      padding-top: 30px;
+      img {
+        width: 60%;
+        height: auto;
+      }
+    }
+  }
+  #Clients {
+    .Left-side {
+      width: 100% !important;
+    }
+    .Right-side {
+      position: relative !important;
+      width: 100% !important;
+      top: 0 !important;
+      padding: 59px 41px;
+      .Patient {
+        width: 730px;
+      }
+    }
+  }
+
+  #Footer-first {
+    .Box3 {
+      padding-top: 20px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .Image-first{
+
+    h2 {
+      font-size: 59px !important;
+      span {
+        font-size: 59px !important;
+      }
+    }
+    .FirstSpan {
+      img {
+        display: none !important;
+      }
+    }
+    .Button {
+      a {
+        padding: 15px 27px !important;
+        font-size: 11px !important;
+      }
+    }
+    p {
+      font-size: 16px !important;
+    }
+  }
+  .Content-wraps {
+    box-shadow: none !important;
+    position: relative !important;
+    top: 0px !important;
+    .wrap-box {
+      padding: 45px 0 0 0 !important;
+      height: 250px !important;
+      border: none !important;
+    }
+  }
+  .Our-Medical {
+    ul {
+      margin-bottom: 0 !important;
+      &.Ul {
+        li {
+          &:last-child {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+    .bg-img {
+      margin-top: 50px;
+    }
+  }
+  #About-medical {
+    
+      .Right-Side {
+        width: 100% !important;
+        position: relative !important;
+        top: 30px !important;
+        .Contents{
+          border:none;
+        }
+      }
+    
+  }
+  #Offer-Service {
+    .Offer-top {
+      padding-top: 42px !important;
+      .Offer-top-but {
+        text-align: left;
+        margin: 34px 0 46px 0;
+      }
+    }
+  }
+  #Footer-first {
+    .Box2 {
+      padding-top: 20px;
+    }
+  }
+  #Footer-second {
+    .footer-text {
+      p {
+        width: 80% !important;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  
+    .Image-first {
+      .FirstSpan {
+        padding: 60px;
+        text-align: center !important;
+        .text-right1 {
+          display: none !important;
+        }
+        h2 {
+          font-size: 37px !important;
+          line-height: 38px;
+          span {
+            font-size: 37px !important;
+          }
+        }
+        p {
+          margin-bottom: 38px !important;
+        }
+        .Button {
+          a {
+            padding: 13px 17px !important;
+            font-size: 9px !important;
+          }
+        }
+      }
+  }
+}
+

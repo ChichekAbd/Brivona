@@ -1,0 +1,244 @@
+@import "default";
+
+.Sameheader {
+  @extend %DentalAboutHead;
+}
+.WhatWe-Do {
+  padding: 88px 0 30px 0;
+  img {
+    width: 100%;
+  }
+  h4 {
+    font-size: 14px;
+    color: $gray;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  h2 {
+    font-size: 35px;
+    color: $darkgreen;
+    font-weight: 700;
+  }
+  p {
+    font-size: 15px;
+    color: $gray;
+    font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+  }
+  .Accordion {
+    .Toggle-title {
+      position: relative;
+      margin-bottom: 0;
+      //   border-bottom: 1px solid #eaeaea;
+      h3 {
+        font-size: 18px;
+        text-transform: capitalize;
+        color: $darkgreen;
+        font-weight: 600;
+        margin-top: 30px;
+      }
+      ::after {
+        content: "\f067";
+        font: 14px/1 FontAwesome;
+        position: absolute;
+        right: 2px;
+        top: 3px;
+        font-size: 10px;
+        border: 2px solid black;
+        padding: 3px 3px 2px 3px;
+        border-radius: 50%;
+      }
+      &.active1 {
+        &::after {
+          content: "\f068";
+          font: 14px/1 FontAwesome;
+          position: absolute;
+          right: 4px;
+          top: 14px;
+          font-size: 10px;
+          border: 2px solid black;
+          padding: 3px 3px 2px 3px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .Toggle-parag {
+      padding-top: 22px;
+      border-bottom: 1px solid #eaeaea;
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+.Green-about {
+  background-color: $green;
+  color: $white;
+  padding: 50px;
+  .Box {
+    padding: 15px 15px;
+    i {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+    h4 {
+      font-size: 55px;
+      font-weight: 700;
+    }
+    h3 {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+#Team {
+  padding-top: 100px;
+  .Team-text {
+    h4 {
+      font-size: 14px;
+      color: $gray;
+      letter-spacing: 1.5px;
+    }
+    h2 {
+      font-size: 35px;
+      color: $darkgreen;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    p {
+      font-size: 15px;
+      color: $gray;
+      font-weight: 400;
+      line-height: 25px;
+      font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+    }
+  }
+  .Doctors {
+    padding-top: 20px;
+    .box-img {
+      border: 8px solid #fff;
+      border-bottom: none;
+      box-shadow: 0 0 10px 0 rgba(3, 59, 74, 0.1);
+      text-align: center;
+      transition: all 0.3s linear;
+      .Img {
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .img-overlay {
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s linear;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: rgba(3, 59, 74, 0.9);
+        }
+        .Plus {
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s linear;
+          position: absolute;
+          top: 45%;
+          left: 43%;
+          i {
+            background-color: $green;
+            padding: 10px 12px;
+            color: $white;
+          }
+        }
+      }
+      h6 {
+        margin-bottom: 0;
+        margin-top: 17px;
+        color: $gray;
+        font-size: 13px;
+        font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+      }
+      h3 {
+        padding-bottom: 18px;
+        a {
+          font-size: 20px;
+          color: $darkgreen;
+          font-weight: 600;
+        }
+      }
+      &:hover {
+        background-color: $green;
+        border-color: $green;
+      }
+      &:hover .img-overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+      &:hover .Plus {
+        opacity: 1;
+        visibility: visible;
+      }
+      &:hover h6 {
+        color: $white;
+      }
+      &:hover h3 a {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #Top-bar {
+    display: none;
+  }
+  #Header {
+    display: none;
+  }
+  .Div {
+    display: none !important;
+  }
+  .Toggle-menu {
+    display: block;
+  }
+  .Bar-fixed {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .WhatWe-Do {
+    padding-top: 40px;
+    img {
+      &.Main-img {
+        width: 380px;
+        height: 500px;
+      }
+    }
+  }
+  .Pad {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Sameheader {
+    padding: 74px 0 !important;
+    .header-right {
+      text-align: left;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .Sameheader {
+    h1 {
+      font-size: 32px !important;
+    }
+  }
+  .WhatWe-Do {
+    img {
+      width: 70% !important;
+    }
+  }
+}

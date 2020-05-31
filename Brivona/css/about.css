@@ -1,0 +1,1093 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "Saira", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.Div .Content1, .Div .Content2, .Div .Content3 {
+  padding: 0 0 0 52px;
+}
+
+.Div .Content1::before, .Div .Content2::before, .Div .Content3::before {
+  font: 14px/1 FontAwesome;
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 23px;
+  padding: 13px 14px;
+  color: #00d6a3;
+  -webkit-box-shadow: 0 0 1px 1px #e6e6e6;
+          box-shadow: 0 0 1px 1px #e6e6e6;
+}
+
+#Footer-second .footer-img {
+  padding-left: 0;
+}
+
+#Footer-second .footer-img img {
+  width: 70px;
+  height: 70px;
+}
+
+#Footer-second .footer-text span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#Footer-second .footer-text p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#Footer-second ul.quick-links li, #Footer-second ul.ServiceUl li {
+  padding-bottom: 12px;
+}
+
+#Footer-second ul.quick-links li:hover a, #Footer-second ul.ServiceUl li:hover a {
+  color: #00d6a3;
+  text-decoration: none;
+}
+
+#Footer-second ul.quick-links li a, #Footer-second ul.ServiceUl li a {
+  position: relative;
+  font-size: 15px;
+  padding-left: 20px;
+  color: #fff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+}
+
+#Footer-second ul.quick-links li a::before, #Footer-second ul.ServiceUl li a::before {
+  content: "";
+  line-height: 1em;
+  font-size: 14px;
+  background-color: #01d6a3;
+  width: 11px;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+.Sameheader {
+  background-image: url(http://brivona.themetechmount.com/wp-content/uploads/2018/12/titlebar-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 104px 0;
+}
+
+.Sameheader h1 {
+  font-size: 47px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.Sameheader .header-right {
+  font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+  font-size: 13px;
+  text-align: right;
+  color: #fff;
+}
+
+.Sameheader .header-right a {
+  color: #fff;
+  margin: 0 0 0 5px;
+}
+
+.Sameheader .header-right span {
+  color: #00d6a3;
+  margin-left: 5px;
+}
+
+.Sameheader .header-right span.line {
+  color: #fff;
+}
+
+/*Header start*/
+#Top-bar {
+  font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+  background-color: #033b4a;
+  padding: 14px 0;
+}
+
+#Top-bar .topbar-left {
+  font-size: 13px;
+  color: #fff;
+}
+
+#Top-bar .topbar-left i {
+  color: #00d6a3;
+  padding-right: 4px;
+}
+
+#Top-bar .topbar-left span {
+  padding-right: 18px;
+}
+
+#Top-bar .topbar-right {
+  width: 52%;
+  text-align: right;
+}
+
+#Top-bar .topbar-right a i {
+  font-size: 14px;
+  color: white;
+  padding-right: 10px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#Top-bar .topbar-right a i:hover {
+  color: #00d6a3;
+}
+
+#Top-bar .topbar-right a:last-child {
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: #00d6a3;
+  padding: 23px 22px 18px 23px;
+  font-weight: 600;
+  margin-left: 8px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#Top-bar .topbar-right a:last-child:hover {
+  color: black;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 0 rgba(3, 59, 74, 0.1);
+          box-shadow: 0 0 10px 0 rgba(3, 59, 74, 0.1);
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+#Header .header-logo img {
+  width: 170px;
+}
+
+#Header .Nav-menu li {
+  position: relative;
+  padding: 39px 0;
+}
+
+#Header .Nav-menu li:hover .active-c::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+#Header .Nav-menu li:hover a {
+  color: #00d6a3;
+}
+
+#Header .Nav-menu li:hover .Sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#Header .Nav-menu li:hover .Sub-menulast {
+  opacity: 1;
+  visibility: visible;
+}
+
+#Header .Nav-menu li a {
+  color: #033b4a;
+  font-weight: 600;
+  padding: 0 14px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  font-size: 15px;
+}
+
+#Header .Nav-menu li a.active-c {
+  color: #00d6a3;
+}
+
+#Header .Nav-menu .Sub-menu {
+  position: absolute;
+  top: 95px;
+  width: 230px;
+  z-index: 10;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 1px 1px #f1f0f0;
+          box-shadow: 0 0 1px 1px #f1f0f0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+#Header .Nav-menu .Sub-menu li {
+  border-top: 1px solid #f0eeee;
+  padding: 10px 0;
+}
+
+#Header .Nav-menu .Sub-menu li.Features {
+  position: relative;
+}
+
+#Header .Nav-menu .Sub-menu li.Features .Sub-menu {
+  position: absolute;
+  right: -231px;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#Header .Nav-menu .Sub-menu li.Features .Sub-menu li:hover a {
+  color: #fff;
+}
+
+#Header .Nav-menu .Sub-menu li.Features .Sub-menu li a {
+  color: #3b3d3e7e;
+}
+
+#Header .Nav-menu .Sub-menu li.Features:hover .Sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#Header .Nav-menu .Sub-menu li.Features a.Feature {
+  position: relative;
+}
+
+#Header .Nav-menu .Sub-menu li.Features a.Feature::after {
+  content: "\f054";
+  font: 14px/1 FontAwesome;
+  position: absolute;
+  right: -130px;
+  top: 3px;
+  font-size: 10px;
+}
+
+#Header .Nav-menu .Sub-menu li.Research {
+  position: relative;
+}
+
+#Header .Nav-menu .Sub-menu li.Research .Sub-menu {
+  position: absolute;
+  right: -231px;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#Header .Nav-menu .Sub-menu li.Research .Sub-menu li:hover a {
+  color: #fff;
+}
+
+#Header .Nav-menu .Sub-menu li.Research .Sub-menu li a {
+  color: #3b3d3e7e;
+}
+
+#Header .Nav-menu .Sub-menu li.Research:hover .Sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#Header .Nav-menu .Sub-menu li.Research a.Researchafter {
+  position: relative;
+}
+
+#Header .Nav-menu .Sub-menu li.Research a.Researchafter::after {
+  content: "\f054";
+  font: 14px/1 FontAwesome;
+  position: absolute;
+  right: -92px;
+  top: 3px;
+  font-size: 10px;
+}
+
+#Header .Nav-menu .Sub-menu li.FirstLi {
+  background-color: #00d6a3;
+}
+
+#Header .Nav-menu .Sub-menu li.FirstLi a {
+  color: #fff;
+}
+
+#Header .Nav-menu .Sub-menu li:last-child {
+  position: relative;
+}
+
+#Header .Nav-menu .Sub-menu li:last-child:hover .HeaderStyl {
+  color: #fff;
+}
+
+#Header .Nav-menu .Sub-menu li:last-child a.HeaderStyl {
+  color: #00d6a3;
+  position: relative;
+}
+
+#Header .Nav-menu .Sub-menu li:last-child a.HeaderStyl::after {
+  content: "\f054";
+  font: 14px/1 FontAwesome;
+  position: absolute;
+  right: -112px;
+  top: 3px;
+  font-size: 10px;
+}
+
+#Header .Nav-menu .Sub-menu li:last-child .Sub-menu {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: -1px;
+  left: 231px;
+}
+
+#Header .Nav-menu .Sub-menu li:last-child .Sub-menu li:hover a {
+  color: #fff;
+}
+
+#Header .Nav-menu .Sub-menu li:last-child .Sub-menu li a {
+  color: #7f90947e;
+}
+
+#Header .Nav-menu .Sub-menu li:last-child .Sub-menu li:first-child {
+  background-color: #00d6a3;
+}
+
+#Header .Nav-menu .Sub-menu li:last-child .Sub-menu li:first-child a {
+  color: #fff;
+}
+
+#Header .Nav-menu .Sub-menu li:last-child:hover .Sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#Header .Nav-menu .Sub-menu li:hover {
+  background-color: #00d6a3;
+}
+
+#Header .Nav-menu .Sub-menu li:hover a {
+  color: #fff;
+}
+
+#Header .Nav-menu .Sub-menu li a {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #7f9094;
+  letter-spacing: 0;
+}
+
+#Header .Nav-menu .Sub-menulast {
+  position: absolute;
+  top: 95px;
+  right: -6px;
+  width: 230px;
+  z-index: 10;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 1px 1px #e6e6e6;
+          box-shadow: 0 0 1px 1px #e6e6e6;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#Header .Nav-menu .Sub-menulast li {
+  border-top: 1px solid #e6e6e6;
+  padding: 10px 0;
+  -webkit-transition: al 0.2s linear;
+  transition: al 0.2s linear;
+}
+
+#Header .Nav-menu .Sub-menulast li:hover {
+  background-color: #00d6a3;
+}
+
+#Header .Nav-menu .Sub-menulast li:hover a {
+  color: #fff;
+}
+
+#Header .Nav-menu .Sub-menulast li a {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #7f9094;
+  letter-spacing: 0;
+}
+
+#Header .Line {
+  position: absolute;
+  background-color: #00d6a3;
+  width: 8px;
+  height: 22px;
+  top: 0;
+  left: 32px;
+  display: none;
+}
+
+#Header .Nav-menu li:hover Line {
+  display: block;
+}
+
+#Header .header-icons {
+  padding: 0;
+}
+
+#Header .header-icons a {
+  color: #033b4a;
+  font-size: 14px;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+#Header .header-icons a.second-icon {
+  position: relative;
+  padding-left: 18px;
+  margin-left: 18px;
+  border-left: 1px solid #dee4e6;
+}
+
+#Header .header-icons a:hover {
+  color: #00d6a3;
+}
+
+#Header .header-icons span {
+  position: absolute;
+  top: -9px;
+  left: 24px;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #00d6a3;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.Toggle-menu {
+  padding: 40px 0;
+  display: none;
+}
+
+.Toggle-menu .Menu-barX {
+  display: none;
+}
+
+.Toggle-menu .Menu-barX.active {
+  display: block;
+}
+
+.Toggle-menu .Menu-barX i {
+  font-size: 30px;
+}
+
+.Toggle-menu .Menu-bar i {
+  font-size: 30px;
+}
+
+.Toggle-menu .logo {
+  text-align: center;
+}
+
+.Toggle-menu .logo img {
+  width: 170px;
+}
+
+.Toggle-menu .header-icons {
+  text-align: right;
+}
+
+.Toggle-menu .header-icons a {
+  color: #033b4a;
+  font-size: 14px;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.Toggle-menu .header-icons a.second-icon {
+  position: relative;
+  padding-left: 18px;
+}
+
+.Toggle-menu .header-icons a:hover {
+  color: #00d6a3;
+}
+
+.Toggle-menu .header-icons span {
+  position: absolute;
+  top: -9px;
+  left: 24px;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #00d6a3;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.nav-menu {
+  display: none;
+  background-color: #fff;
+  border-top: 3px solid #00d6a3;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 3px 3px 15px;
+          box-shadow: rgba(0, 0, 0, 0.12) 3px 3px 15px;
+  position: relative;
+  z-index: 10;
+  padding: 4px;
+}
+
+.nav-menu.active {
+  display: block;
+}
+
+.nav-menu ul li {
+  color: #7f9094;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 15px 4px;
+  position: relative;
+  border-bottom: 1px solid rgba(127, 144, 148, 0.15);
+}
+
+.nav-menu ul li.active {
+  color: #00d6a3;
+}
+
+.nav-menu ul li i {
+  float: right;
+  margin-top: 8px;
+  margin-right: 9px;
+  color: #7f9094;
+}
+
+.nav-menu ul.Drop-li {
+  display: none;
+  padding: 20px;
+}
+
+.nav-menu ul.Drop-li.active {
+  display: block;
+}
+
+.nav-menu ul.Drop-li .down-i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.nav-menu ul.Drop-li li {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.nav-menu ul.Drop-li li.drop-firstli {
+  color: #00d6a3;
+}
+
+.nav-menu ul.Drop-li li.drop-lastli {
+  color: #00d6a3;
+}
+
+.nav-menu ul .LastDrop {
+  padding: 20px;
+}
+
+.nav-menu ul .LastDrop li:first-child {
+  color: #00d6a3;
+}
+
+.Div {
+  background-color: #f9fafa;
+  padding: 19px 0 0 0;
+}
+
+.Div h3 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #033b4a;
+}
+
+.Div h5 {
+  font-size: 13px;
+  color: #9dabaf;
+  font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+}
+
+.Div .Content1::before {
+  content: "\f0f8";
+}
+
+.Div .Content2::before {
+  content: "\f007";
+}
+
+.Div .Content3::before {
+  content: "\f164";
+}
+
+.Div .phone-c {
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.Div .phone-c .phone {
+  background-color: #00d6a3;
+  padding: 12px 0 14px 17px;
+  width: 249px;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.Div .phone-c .phone i {
+  font-size: 12px;
+  padding-right: 4px;
+}
+
+/*Header end*/
+/*Footer start*/
+#Footer-first {
+  background-color: #00d6a3;
+  padding: 40px 0;
+}
+
+#Footer-first i {
+  border: 2px solid transparent;
+  font-size: 21px;
+  border-color: #fff;
+  border-width: 1px;
+  padding: 14px 15px;
+  color: #fff;
+}
+
+#Footer-first .Footer-first-text {
+  margin-left: 20px;
+}
+
+#Footer-first .Footer-first-text h2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#Footer-first .Footer-first-text h4 {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+}
+
+#Footer-second {
+  padding: 55px 0;
+  background-image: url(http://brivona.themetechmount.com/wp-content/uploads/2019/01/footer-bg-map.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#Footer-second h3 {
+  font-size: 23px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+#Footer-second p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 25px;
+  margin-bottom: 32px;
+  font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+}
+
+#Footer-second ul.social-icons {
+  margin-left: 0;
+}
+
+#Footer-second ul.social-icons li:hover a {
+  background-color: #00d6a3;
+  color: #fff;
+}
+
+#Footer-second ul.social-icons li a {
+  font-size: 14px;
+  color: #00d6a3;
+  border: 1px solid #00d6a3;
+  padding: 6px 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  position: relative;
+}
+
+#Footer-second ul.ServiceUl li {
+  display: inline-block;
+  width: calc(50% - 2px);
+}
+
+#Footer-second .Subscribe {
+  position: relative;
+}
+
+#Footer-second .Subscribe input {
+  background-color: rgba(255, 255, 255, 0.09);
+  border: none;
+  width: 100%;
+  height: 45px;
+  padding-left: 15px;
+  color: white;
+  font-size: 13px;
+  outline: none;
+}
+
+#Footer-second .Subscribe::after {
+  content: "\f0e0";
+  font: 14px/1 FontAwesome;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 17px;
+  color: #fff;
+  padding: 14px 16px;
+  background-color: #00d6a3;
+}
+
+#Footer-bottom {
+  background-color: #013340;
+  padding: 25px 0;
+}
+
+#Footer-bottom p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+}
+
+#Footer-bottom p a {
+  color: #00d6a3;
+}
+
+#Footer-bottom ul {
+  margin-bottom: 0;
+}
+
+#Footer-bottom ul li:hover a {
+  color: #00d6a3;
+  text-decoration: none;
+}
+
+#Footer-bottom ul li:first-child a {
+  padding-right: 9px;
+  border-right: 2px solid #fff;
+}
+
+#Footer-bottom ul li:nth-child(2) a {
+  padding-right: 9px;
+  padding-left: 9px;
+  border-right: 2px solid #fff;
+}
+
+#Footer-bottom ul li:nth-child(3) a {
+  padding-left: 9px;
+}
+
+#Footer-bottom ul li a {
+  font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+/*Footer end*/
+.WhatWe-Do {
+  padding: 88px 0 30px 0;
+}
+
+.WhatWe-Do img {
+  width: 100%;
+}
+
+.WhatWe-Do h4 {
+  font-size: 14px;
+  color: #9dabaf;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.WhatWe-Do h2 {
+  font-size: 35px;
+  color: #033b4a;
+  font-weight: 700;
+}
+
+.WhatWe-Do p {
+  font-size: 15px;
+  color: #9dabaf;
+  font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+}
+
+.WhatWe-Do .Accordion .Toggle-title {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.WhatWe-Do .Accordion .Toggle-title h3 {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #033b4a;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.WhatWe-Do .Accordion .Toggle-title ::after {
+  content: "\f067";
+  font: 14px/1 FontAwesome;
+  position: absolute;
+  right: 2px;
+  top: 3px;
+  font-size: 10px;
+  border: 2px solid black;
+  padding: 3px 3px 2px 3px;
+  border-radius: 50%;
+}
+
+.WhatWe-Do .Accordion .Toggle-title.active1::after {
+  content: "\f068";
+  font: 14px/1 FontAwesome;
+  position: absolute;
+  right: 4px;
+  top: 14px;
+  font-size: 10px;
+  border: 2px solid black;
+  padding: 3px 3px 2px 3px;
+  border-radius: 50%;
+}
+
+.WhatWe-Do .Accordion .Toggle-parag {
+  padding-top: 22px;
+  border-bottom: 1px solid #eaeaea;
+  display: none;
+}
+
+.WhatWe-Do .Accordion .Toggle-parag.active {
+  display: block;
+}
+
+.Green-about {
+  background-color: #00d6a3;
+  color: #fff;
+  padding: 50px;
+}
+
+.Green-about .Box {
+  padding: 15px 15px;
+}
+
+.Green-about .Box i {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.Green-about .Box h4 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.Green-about .Box h3 {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#Team {
+  padding-top: 100px;
+}
+
+#Team .Team-text h4 {
+  font-size: 14px;
+  color: #9dabaf;
+  letter-spacing: 1.5px;
+}
+
+#Team .Team-text h2 {
+  font-size: 35px;
+  color: #033b4a;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#Team .Team-text p {
+  font-size: 15px;
+  color: #9dabaf;
+  font-weight: 400;
+  line-height: 25px;
+  font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+}
+
+#Team .Doctors {
+  padding-top: 20px;
+}
+
+#Team .Doctors .box-img {
+  border: 8px solid #fff;
+  border-bottom: none;
+  -webkit-box-shadow: 0 0 10px 0 rgba(3, 59, 74, 0.1);
+          box-shadow: 0 0 10px 0 rgba(3, 59, 74, 0.1);
+  text-align: center;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#Team .Doctors .box-img .Img {
+  position: relative;
+}
+
+#Team .Doctors .box-img .Img img {
+  width: 100%;
+  height: 100%;
+}
+
+#Team .Doctors .box-img .Img .img-overlay {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(3, 59, 74, 0.9);
+}
+
+#Team .Doctors .box-img .Img .Plus {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  position: absolute;
+  top: 45%;
+  left: 43%;
+}
+
+#Team .Doctors .box-img .Img .Plus i {
+  background-color: #00d6a3;
+  padding: 10px 12px;
+  color: #fff;
+}
+
+#Team .Doctors .box-img h6 {
+  margin-bottom: 0;
+  margin-top: 17px;
+  color: #9dabaf;
+  font-size: 13px;
+  font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+}
+
+#Team .Doctors .box-img h3 {
+  padding-bottom: 18px;
+}
+
+#Team .Doctors .box-img h3 a {
+  font-size: 20px;
+  color: #033b4a;
+  font-weight: 600;
+}
+
+#Team .Doctors .box-img:hover {
+  background-color: #00d6a3;
+  border-color: #00d6a3;
+}
+
+#Team .Doctors .box-img:hover .img-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+#Team .Doctors .box-img:hover .Plus {
+  opacity: 1;
+  visibility: visible;
+}
+
+#Team .Doctors .box-img:hover h6 {
+  color: #fff;
+}
+
+#Team .Doctors .box-img:hover h3 a {
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  #Top-bar {
+    display: none;
+  }
+  #Header {
+    display: none;
+  }
+  .Div {
+    display: none !important;
+  }
+  .Toggle-menu {
+    display: block;
+  }
+  .Bar-fixed {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .WhatWe-Do {
+    padding-top: 40px;
+  }
+  .WhatWe-Do img.Main-img {
+    width: 380px;
+    height: 500px;
+  }
+  .Pad {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Sameheader {
+    padding: 74px 0 !important;
+  }
+  .Sameheader .header-right {
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .Sameheader h1 {
+    font-size: 32px !important;
+  }
+  .WhatWe-Do img {
+    width: 70% !important;
+  }
+}
+/*# sourceMappingURL=about.css.map */

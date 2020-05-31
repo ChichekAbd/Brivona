@@ -1,0 +1,936 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  // font-family: 'Saira Condensed', sans-serif;
+  font-family: "Saira", sans-serif;
+}
+li {
+  list-style: none;
+}
+
+$darkgreen: #033b4a;
+$white: #fff;
+$green: #00d6a3;
+$gray: #9dabaf;
+
+%Button1 {
+  a {
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: 1px solid $white;
+    text-decoration: none;
+    padding: 17px 30px;
+    font-size: 13px;
+    color: $white;
+    transition: all 0.1s linear;
+    &:hover {
+      color: $darkgreen;
+      background-color: $white;
+    }
+  }
+}
+
+%Button2 {
+  a {
+    font-weight: 600;
+    padding: 13px 30px 13px 30px;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border: 1px solid $darkgreen;
+    background: transparent;
+    margin-right: 20px;
+    transition: all 0.2s linear;
+    color: $darkgreen;
+    &:hover {
+      color: $white;
+      background-color: $darkgreen;
+    }
+  }
+}
+
+%Button3 {
+  a {
+    &.SecondBut {
+      font-weight: 600;
+      padding: 13px 30px 13px 30px;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 1px;
+      background-color: $green;
+      border: 1px solid $green;
+      transition: all 0.2s linear;
+      color: $white;
+      &:hover {
+        background-color: $darkgreen;
+      }
+    }
+  }
+}
+
+%Button4 {
+  a {
+    font-weight: 600;
+    padding: 17px 30px;
+    text-decoration: none;
+    font-size: 13px;
+    color: $white;
+    letter-spacing: 1px;
+    &.SecondBut {
+      background-color: $green;
+      border: 1px solid $green;
+      transition: all 0.2s linear;
+      &:hover {
+        color: $darkgreen;
+        background-color: $white;
+        border-color: $white;
+      }
+    }
+  }
+}
+
+%Content {
+  padding: 0 0 0 52px;
+  &::before {
+    font: 14px/1 FontAwesome;
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    background-color: $white;
+    text-align: center;
+    font-size: 23px;
+    padding: 13px 14px;
+    color: $green;
+    box-shadow: 0 0 1px 1px #e6e6e6;
+  }
+}
+
+%Li {
+  li {
+    color: $gray;
+    font-size: 15px;
+    position: relative;
+    padding: 0 30px 12px 28px;
+    font-weight: 600;
+    &::before {
+      content: "\f061";
+      font: 14px/1 FontAwesome;
+      position: absolute;
+      font-size: 8px;
+      top: 3px;
+      left: 2px;
+      background-color: #00d6a3;
+      color: #fff;
+      padding: 3px 3px;
+      border-radius: 13px;
+    }
+  }
+}
+
+%LatestNews {
+  .footer-img {
+    padding-left: 0;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .footer-text {
+    span {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    p {
+      color: #fff;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+%FooterUl {
+  li {
+    padding-bottom: 12px;
+    &:hover a {
+      color: $green;
+      text-decoration: none;
+    }
+    a {
+      position: relative;
+      font-size: 15px;
+      padding-left: 20px;
+      color: $white;
+      transition: all 0.2s ease;
+      font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+      &::before {
+        content: "";
+        line-height: 1em;
+        font-size: 14px;
+        background-color: #01d6a3;
+        width: 11px;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        top: 8px;
+      }
+    }
+  }
+}
+
+%DentalAboutHead {
+  background-image: url(http://brivona.themetechmount.com/wp-content/uploads/2018/12/titlebar-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 104px 0;
+  h1 {
+    font-size: 47px;
+    color: $white;
+    font-weight: 700;
+  }
+  .header-right {
+    font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+    text-align: right;
+    color: $white;
+    a {
+      color: $white;
+      margin: 0 0 0 5px;
+    }
+    span {
+      color: $green;
+      margin-left: 5px;
+      &.line {
+        color: $white;
+      }
+    }
+  }
+}
+
+%Doctors {
+  .Slick-Slider {
+    padding-top: 20px;
+    .Team-img {
+      border: 8px solid #fff;
+      border-bottom: none;
+      box-shadow: 0 0 10px 0 rgba(3, 59, 74, 0.1);
+      text-align: center;
+      transition: all 0.3s linear;
+      .Img {
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .img-overlay {
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s linear;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: rgba(3, 59, 74, 0.9);
+        }
+        .Plus {
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s linear;
+          position: absolute;
+          top: 45%;
+          left: 43%;
+          i {
+            background-color: $green;
+            padding: 10px 12px;
+            color: $white;
+          }
+        }
+      }
+      h6 {
+        margin-bottom: 0;
+        margin-top: 17px;
+        color: $gray;
+        font-size: 13px;
+        font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+      }
+      h3 {
+        padding-bottom: 18px;
+        a {
+          font-size: 20px;
+          color: $darkgreen;
+          font-weight: 600;
+        }
+      }
+      &:hover {
+        background-color: $green;
+        border-color: $green;
+      }
+      &:hover .img-overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+      &:hover .Plus {
+        opacity: 1;
+        visibility: visible;
+      }
+      &:hover h6 {
+        color: $white;
+      }
+      &:hover h3 a {
+        color: $white;
+      }
+    }
+  }
+}
+
+/*Header start*/
+#Top-bar {
+  font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+  background-color: $darkgreen;
+  padding: 14px 0;
+  .topbar-left {
+    font-size: 13px;
+    color: $white;
+    i {
+      color: $green;
+      padding-right: 4px;
+    }
+    span {
+      padding-right: 18px;
+    }
+  }
+  .topbar-right {
+    width: 52%;
+    text-align: right;
+    a {
+      i {
+        font-size: 14px;
+        color: white;
+        padding-right: 10px;
+        transition: all 0.2s linear;
+        &:hover {
+          color: $green;
+        }
+      }
+      &:last-child {
+        color: white;
+        font-size: 12px;
+        letter-spacing: 1px;
+        background-color: $green;
+        padding: 23px 22px 18px 23px;
+        font-weight: 600;
+        margin-left: 8px;
+        transition: all 0.2s linear;
+        &:hover {
+          color: black;
+          background-color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.fixed{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1000;
+  background-color:$white;
+  box-shadow: 0 0 10px 0 rgba(3, 59, 74, 0.1);
+  transition: all .2s linear;
+}
+#Header {
+  .header-logo {
+    img {
+      width: 170px;
+    }
+  }
+  .Nav-menu {
+    li {
+      position: relative;
+      padding: 39px 0;
+      &:hover .active-c {
+        &::before {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      &:hover a {
+        color: $green;
+      }
+      &:hover .Sub-menu {
+        opacity: 1;
+        visibility: visible;
+      }
+      &:hover .Sub-menulast {
+        opacity: 1;
+        visibility: visible;
+      }
+      a {
+        color: $darkgreen;
+        font-weight: 600;
+        padding: 0 14px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        transition: all 0.2s linear;
+        font-size: 15px;
+        &.active-c {
+          color: $green;
+        }
+      }
+    }
+    .Sub-menu {
+      position: absolute;
+      top: 95px;
+      width: 230px;
+      z-index: 10;
+      background-color: $white;
+      box-shadow: 0 0 1px 1px #f1f0f0;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.1s linear;
+      li {
+        border-top: 1px solid #f0eeee;
+        padding: 10px 0;
+        &.Features {
+          position: relative;
+          .Sub-menu {
+            position: absolute;
+            right: -231px;
+            top: 0;
+            opacity: 0;
+            visibility: hidden;
+            li {
+              &:hover a {
+                color: $white;
+              }
+              a {
+                color: #3b3d3e7e;
+              }
+            }
+          }
+          &:hover .Sub-menu {
+            opacity: 1;
+            visibility: visible;
+          }
+          a {
+            &.Feature {
+              position: relative;
+              &::after {
+                content: "\f054";
+                font: 14px/1 FontAwesome;
+                position: absolute;
+                right: -130px;
+                top: 3px;
+                font-size: 10px;
+              }
+            }
+          }
+        }
+        &.Research {
+          position: relative;
+          .Sub-menu {
+            position: absolute;
+            right: -231px;
+            top: 0;
+            opacity: 0;
+            visibility: hidden;
+            li {
+              &:hover a {
+                color: $white;
+              }
+              a {
+                color: #3b3d3e7e;
+              }
+            }
+          }
+          &:hover .Sub-menu {
+            opacity: 1;
+            visibility: visible;
+          }
+          a {
+            &.Researchafter {
+              position: relative;
+              &::after {
+                content: "\f054";
+                font: 14px/1 FontAwesome;
+                position: absolute;
+                right: -92px;
+                top: 3px;
+                font-size: 10px;
+              }
+            }
+          }
+        }
+        &.FirstLi {
+          background-color: $green;
+          a {
+            color: $white;
+          }
+        }
+        &:last-child {
+          position: relative;
+          &:hover .HeaderStyl {
+            color: $white;
+          }
+          a {
+            &.HeaderStyl {
+              color: $green;
+              position: relative;
+              &::after {
+                content: "\f054";
+                font: 14px/1 FontAwesome;
+                position: absolute;
+                right: -112px;
+                top: 3px;
+                font-size: 10px;
+              }
+            }
+          }
+          .Sub-menu {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            top: -1px;
+            left: 231px;
+            li {
+              &:hover a {
+                color: $white;
+              }
+              a {
+                color: #7f90947e;
+              }
+              &:first-child {
+                background-color: $green;
+                a {
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+        &:last-child:hover .Sub-menu {
+          opacity: 1;
+          visibility: visible;
+        }
+        &:hover {
+          background-color: $green;
+        }
+        &:hover a {
+          color: $white;
+        }
+        a {
+          font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+          font-weight: 400;
+          font-size: 13px;
+          color: #7f9094;
+          letter-spacing: 0;
+        }
+      }
+    }
+    .Sub-menulast {
+      position: absolute;
+      top: 95px;
+      right: -6px;
+      width: 230px;
+      z-index: 10;
+      background-color: $white;
+      box-shadow: 0 0 1px 1px #e6e6e6;
+      opacity: 0;
+      visibility: hidden;
+      li {
+        border-top: 1px solid #e6e6e6;
+        padding: 10px 0;
+        transition: al 0.2s linear;
+        &:hover {
+          background-color: $green;
+        }
+        &:hover a {
+          color: $white;
+        }
+        a {
+          font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+          font-weight: 400;
+          font-size: 13px;
+          color: #7f9094;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+
+  .Line{
+      position: absolute;
+      background-color: $green;
+      width: 8px;
+      height: 22px;
+      top: 0;
+      left: 32px;
+      display:none;
+  }
+  .Nav-menu li{
+    &:hover Line{
+    display:block;
+    }
+  }
+
+  .header-icons {
+    padding: 0;
+    a {
+      color: $darkgreen;
+      font-size: 14px;
+      &.second-icon {
+        position: relative;
+        padding-left: 18px;
+        margin-left: 18px;
+        border-left: 1px solid #dee4e6;
+      }
+      transition: all 0.1s linear;
+      &:hover {
+        color: $green;
+      }
+    }
+    span {
+      position: absolute;
+      top: -9px;
+      left: 24px;
+      font-size: 10px;
+      width: 15px;
+      height: 15px;
+      background-color: $green;
+      border-radius: 10px;
+      text-align: center;
+      color: $white;
+    }
+  }
+}
+.Toggle-menu {
+  padding: 40px 0;
+  display: none;
+
+  .Menu-barX {
+    display: none;
+    &.active {
+      display: block;
+    }
+    i {
+      font-size: 30px;
+    }
+  }
+
+  .Menu-bar {
+    i {
+      font-size: 30px;
+    }
+  }
+  .logo {
+    text-align: center;
+    img {
+      width: 170px;
+    }
+  }
+  .header-icons {
+    text-align: right;
+    a {
+      color: $darkgreen;
+      font-size: 14px;
+      &.second-icon {
+        position: relative;
+        padding-left: 18px;
+      }
+      transition: all 0.1s linear;
+      &:hover {
+        color: $green;
+      }
+    }
+    span {
+      position: absolute;
+      top: -9px;
+      left: 24px;
+      font-size: 10px;
+      width: 15px;
+      height: 15px;
+      background-color: $green;
+      border-radius: 10px;
+      text-align: center;
+      color: $white;
+    }
+  }
+}
+.nav-menu {
+  display: none;
+  &.active {
+    display: block;
+  }
+  background-color: $white;
+  border-top: 3px solid $green;
+  box-shadow: rgba(0, 0, 0, 0.12) 3px 3px 15px;
+  position: relative;
+  z-index: 10;
+  padding: 4px;
+  ul {
+    li {
+      color: #7f9094;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 15px 4px;
+      position: relative;
+      border-bottom: 1px solid rgba(127, 144, 148, 0.15);
+      &.active {
+        color: $green;
+      }
+      i {
+        float: right;
+        margin-top: 8px;
+        margin-right: 9px;
+        color: #7f9094;
+      }
+    }
+    &.Drop-li {
+      display: none;
+      &.active {
+        display: block;
+      }
+      .down-i {
+        transform: rotate(90deg);
+      }
+      padding: 20px;
+      li {
+        font-size: 13px;
+        font-weight: 400;
+        &.drop-firstli {
+          color: $green;
+        }
+        &.drop-lastli {
+          color: $green;
+        }
+      }
+    }
+    .LastDrop {
+      padding: 20px;
+      li {
+        &:first-child {
+          color: $green;
+        }
+      }
+    }
+  }
+}
+
+.Div {
+  background-color: #f9fafa;
+  padding: 19px 0 0 0;
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: $darkgreen;
+  }
+  h5 {
+    font-size: 13px;
+    color: $gray;
+    font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+  }
+  .Content1 {
+    @extend %Content;
+    &::before {
+      content: "\f0f8";
+    }
+  }
+  .Content2 {
+    @extend %Content;
+    &::before {
+      content: "\f007";
+    }
+  }
+  .Content3 {
+    @extend %Content;
+    &::before {
+      content: "\f164";
+    }
+  }
+  .phone-c {
+    padding: 0;
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    .phone {
+      background-color: $green;
+      padding: 12px 0 14px 17px;
+      width: 249px;
+      margin-top: 15px;
+      font-size: 15px;
+      i {
+        font-size: 12px;
+        padding-right: 4px;
+      }
+    }
+  }
+}
+/*Header end*/
+
+/*Footer start*/
+
+#Footer-first {
+  background-color: $green;
+  padding: 40px 0;
+  i {
+    border: 2px solid transparent;
+    font-size: 21px;
+    border-color: $white;
+    border-width: 1px;
+    padding: 14px 15px;
+    color: $white;
+  }
+  .Footer-first-text {
+    margin-left: 20px;
+    h2 {
+      font-size: 20px;
+      color: $white;
+      font-weight: 600;
+    }
+    h4 {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.9);
+      font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+    }
+  }
+}
+
+#Footer-second {
+  padding: 55px 0;
+  background-image: url(http://brivona.themetechmount.com/wp-content/uploads/2019/01/footer-bg-map.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  h3 {
+    font-size: 23px;
+    color: $white;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 25px;
+    margin-bottom: 32px;
+    font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+  }
+  ul {
+    &.social-icons {
+      margin-left: 0;
+      li {
+        &:hover a {
+          background-color: $green;
+          color: $white;
+        }
+        a {
+          font-size: 14px;
+          color: $green;
+          border: 1px solid $green;
+          padding: 6px 12px;
+          border-radius: 50%;
+          margin-right: 5px;
+          transition: all 0.2s ease-in;
+          position: relative;
+        }
+      }
+    }
+    &.quick-links {
+      @extend %FooterUl;
+    }
+    &.ServiceUl {
+      li {
+        display: inline-block;
+        width: calc(50% - 2px);
+      }
+      @extend %FooterUl;
+    }
+  }
+  @extend %LatestNews;
+
+  .Subscribe {
+    position: relative;
+    input {
+      background-color: rgba(255, 255, 255, 0.09);
+      border: none;
+      width: 100%;
+      height: 45px;
+      padding-left: 15px;
+      color: rgba(255, 255, 255, 1);
+      font-size: 13px;
+      outline: none;
+    }
+    &::after {
+      content: "\f0e0";
+      font: 14px/1 FontAwesome;
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 17px;
+      color: $white;
+      padding: 14px 16px;
+      background-color: $green;
+    }
+  }
+}
+
+#Footer-bottom {
+  background-color: #013340;
+  padding: 25px 0;
+  p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+    a {
+      color: $green;
+    }
+  }
+  ul {
+    margin-bottom: 0;
+    li {
+      &:hover a {
+        color: $green;
+        text-decoration: none;
+      }
+      &:first-child {
+        a {
+          padding-right: 9px;
+          border-right: 2px solid $white;
+        }
+      }
+      &:nth-child(2) {
+        a {
+          padding-right: 9px;
+          padding-left: 9px;
+          border-right: 2px solid $white;
+        }
+      }
+      &:nth-child(3) {
+        a {
+          padding-left: 9px;
+        }
+      }
+      a {
+        font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+        color: $white;
+        font-size: 14px;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+}
+/*Footer end*/

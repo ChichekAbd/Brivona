@@ -1,0 +1,265 @@
+@import "default";
+
+.Sameheader {
+  @extend %DentalAboutHead;
+}
+
+.Dental-Main {
+  padding-top: 64px;
+  .special-services {
+    box-shadow: 0 0 10px 0 rgba(3, 59, 74, 0.1);
+    li {
+      position: relative;
+      padding: 16px 30px 16px 15px;
+      border-top: 1px solid #eaeaea;
+      transition: all 0.2s linear;
+      &.DentalLi {
+        color: $white;
+        background-color: $green;
+        a {
+          color: $white;
+        }
+      }
+      &::after {
+        content: "\f054";
+        font: 14px/1 FontAwesome;
+        position: absolute;
+        right: 16px;
+        top: 20px;
+        font-size: 13px;
+      }
+      a {
+        color: $darkgreen;
+        font-size: 15px;
+        font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      &:hover {
+        background-color: $green;
+        color: $white;
+      }
+      &:hover a {
+        color: $white;
+      }
+    }
+  }
+  .widget-text {
+    background-color: $green;
+    text-align: center;
+    color: $white;
+    padding: 38px 0;
+    margin-bottom: 38px;
+    i {
+      font-size: 42px;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 31px;
+      margin: 18px 0 8px 0;
+    }
+    p {
+      font-size: 15px;
+      font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+    }
+    a {
+      color: $white;
+      font-size: 15px;
+      font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+      &.view_more {
+        text-decoration: underline;
+      }
+    }
+  }
+  .Latest-news {
+    @extend %LatestNews;
+    h3 {
+      font-size: 23px;
+      font-weight: 700;
+      position: relative;
+      padding-left: 26px;
+      margin-bottom: 26px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: 0;
+        width: 17px;
+        height: 2px;
+        background-color: $green;
+      }
+    }
+    .footer-text {
+      margin-bottom: 18px;
+      font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+      span {
+        color: $gray;
+      }
+      p {
+        font-weight: 700;
+        color: $darkgreen;
+        width: 208px;
+      }
+    }
+  }
+  .Main-right {
+    padding-bottom: 60px;
+    h4 {
+      font-size: 25px;
+      color: $darkgreen;
+      padding: 32px 0 14px 0;
+      font-weight: 700;
+      border-bottom: 1px solid #eaeaea;
+    }
+    img {
+      width: 100%;
+    }
+    p {
+      color: $gray;
+      font-size: 15px;
+      line-height: 26px;
+      padding-top: 10px;
+      margin-bottom: 0;
+      font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+      a {
+        color: $green;
+        text-decoration: none;
+      }
+    }
+
+    ul {
+      &.UL {
+        padding-top: 30px;
+        li {
+          display: inline-block;
+          width: calc(50% - 2px);
+        }
+      }
+      @extend %Li;
+    }
+    .Doctors {
+      padding-top: 20px;
+      .box-img {
+        border: 8px solid #fff;
+        border-bottom: none;
+        box-shadow: 0 0 10px 0 rgba(3, 59, 74, 0.1);
+        text-align: center;
+        transition: all 0.3s linear;
+        .Img {
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          .img-overlay {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s linear;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(3, 59, 74, 0.9);
+          }
+          .Plus {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s linear;
+            position: absolute;
+            top: 45%;
+            left: 43%;
+            i {
+              background-color: $green;
+              padding: 10px 12px;
+              color: $white;
+            }
+          }
+        }
+        h6 {
+          margin-bottom: 0;
+          margin-top: 17px;
+          color: $gray;
+          font-size: 13px;
+          font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+        }
+        h3 {
+          padding-bottom: 18px;
+          a {
+            font-size: 20px;
+            color: $darkgreen;
+            font-weight: 600;
+          }
+        }
+        &:hover {
+          background-color: $green;
+          border-color: $green;
+        }
+        &:hover .img-overlay {
+          opacity: 1;
+          visibility: visible;
+        }
+        &:hover .Plus {
+          opacity: 1;
+          visibility: visible;
+        }
+        &:hover h6 {
+          color: $white;
+        }
+        &:hover h3 a {
+          color: $white;
+        }
+      }
+    }
+  } 
+}
+@media (max-width: 1200px) {
+  #Top-bar {
+    display: none;
+  }
+  #Header {
+    display: none;
+  }
+  .Div {
+    display: none !important;
+  }
+  .Toggle-menu {
+    display: block;
+  }
+  .Bar-fixed{
+    display:none;
+  }
+  #Footer-second {
+    .ServiceUl {
+      li {
+        width: 100% !important;
+        display: block !important;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .Main-right {
+    ul {
+      &.UL li {
+        display: block !important;
+        width: 100% !important;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .Sameheader {
+    padding: 74px 0 !important;
+    .header-right {
+      text-align: left;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .Sameheader {
+    h1 {
+      font-size: 32px !important;
+    }
+  }
+}
